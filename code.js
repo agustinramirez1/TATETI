@@ -162,6 +162,12 @@ function winner() {
     name2 = document.getElementById("Name2").value;
 
     if (b1 == 'X' && b2 == 'X' && b3 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
 
         swal({
             text: name1 + " es el ganador",
@@ -169,42 +175,84 @@ function winner() {
         });
     }
     else if (b1 == 'X' && b4 == 'X' && b7 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name1 + " es el ganador",
             icon: "success"
         });
     }
     else if (b7 == 'X' && b8 == 'X' && b9 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name1 + " es el ganador",
             icon: "success"
         });
     }
     else if (b3 == 'X' && b6 == 'X' && b9 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name1 + " es el ganador",
             icon: "success"
         });
     }
     else if (b1 == 'X' && b5 == 'X' && b9 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name1 + " es el ganador",
             icon: "success"
         });
     }
     else if (b3 == 'X' && b5 == 'X' && b7 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name1 + " es el ganador",
             icon: "success"
         });
     }
     else if (b2 == 'X' && b5 == 'X' && b8 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name1 + " es el ganador",
             icon: "success"
         });
     }
     else if (b4 == 'X' && b5 == 'X' && b6 == 'X') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name1 + " es el ganador",
             icon: "success"
@@ -212,45 +260,96 @@ function winner() {
     }
   
     else if (b1 == 'O' && b2 == 'O' && b3 == 'O') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name2 + " es el ganador",
             icon: "success"
         });
     }
     else if (b1 == 'O' && b4 == 'O' && b7 == 'O') {
-        window.alert('Player 0 won');
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b7 == 'O' && b8 == 'O' && b9 == 'O') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name2 + " es el ganador",
             icon: "success"
         });
     }
     else if (b3 == 'O' && b6 == 'O' && b9 == 'O') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name2 + " es el ganador",
             icon: "success"
         });
     }
     else if (b1 == 'O' && b5 == 'O' && b9 == 'O') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name2 + " es el ganador",
             icon: "success"
         });
     }
     else if ( b3 == 'O' && b5 == 'O' && b7 == 'O') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name2 + " es el ganador",
             icon: "success"
         });
     }
     else if (b2 == 'O' && b5 == 'O' && b8 == 'O') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name2 + " es el ganador",
             icon: "success"
         });
     }
     else if (b4 == 'O' && b5 == 'O' && b6 == '0') {
+        const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
         swal({
             text: name2 + " es el ganador",
             icon: "success"
@@ -263,8 +362,14 @@ function winner() {
         b5 == 'O') && (b6 == 'X' || b6 == 'O') && 
         (b7 == 'X' || b7 == 'O') && (b8 == 'X' || 
         b8 == 'O') && (b9 == 'X' || b9 == 'O')) {
+            const t1 = document.getElementById('t1');
+        t1.classList.add('disabled');
+        const t2 = document.getElementById('t2');
+        t2.classList.add('disabled');
+        const t3 = document.getElementById('t3');
+        t3.classList.add('disabled');
             swal({
-                text: "EMPATE",
+                text: "OPA EMPATE",
                 icon: "warning"
             });
     }
