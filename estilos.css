@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    font-family: Arial;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-family:system-ui;
+}
+
+table {
+    margin: 5px auto;
+}
+
+.vert {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.hori {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.texto {
+    margin: auto;
+}
+
+.campo {
+    margin: auto;
+    margin-top: 5px;
+    margin-right: 65px;
+}
+
+button {
+  border-radius: 8px;
+  text-shadow: 1px 1px 15px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 5px 30px;
+  background: #88dd77;
+  border: solid #000000 1px;
+  text-decoration: none;
+}
+
+label {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+input {
+    border-radius: 4px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .1;
+}
+
+.disable-block {
+    pointer-events: none;
+}

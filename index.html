@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TA TE TI</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
+        <script src="code.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <h1>TA TE TI</h1>
+        <center><label for="Name1" class="texto">Jugador 1 (X): </label>
+        <input type="text" class="campo" id="Name1" name="Name1">
+        <br>
+        <label for="Name2" class="texto">Jugador 2 (O): </label>
+            <input type="text" class="campo" id="Name2" name="Name2"></center>
+
+            <center><button type="submit" onclick="empezarJuego();">Jugar</button></center>
+        <br><br>
+<table>
+  <tr id="t1" class="disabled">
+    <td id="b1" onclick="setValor1();"></td>
+    <td class="vert" id="b2" onclick="setValor2();"></td>
+    <td id="b3" onclick="setValor3();"></td>
+  </tr>
+  <tr id="t2" class="disabled">
+    <td class="hori" id="b4" onclick="setValor4();"></td>
+    <td class="vert hori" id="b5" onclick="setValor5();"></td>
+    <td class="hori" id="b6" onclick="setValor6();"></td>
+  </tr>
+  <tr id="t3" class="disabled">
+    <td id="b7" onclick="setValor7();"></td>
+    <td class="vert" id="b8" onclick="setValor8();"></td>
+    <td id="b9" onclick="setValor9();"></td>
+  </tr>
+</table>
+    </body>
+</html>
