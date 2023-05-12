@@ -3,6 +3,7 @@ function empezarJuego() {
     var name1, name2;
     name1 = document.getElementById("Name1").value;
     name2 = document.getElementById("Name2").value;
+    console.log(name1)
     
     if (name1 == "" || name2 == "") {
         swal("Advertencia", "Debe ingresar el nombre del jugador 1 y 2",'warning');
@@ -148,63 +149,112 @@ function setValor9() {
 
 function winner() {
     var b1, b2,b3, b4, b5, b6, b7, b8, b9;
-    b1 = document.getElementById("b1").value;
-    b2 = document.getElementById("b2").value;
-    b3 = document.getElementById("b3").value;
-    b4 = document.getElementById("b4").value;
-    b5 = document.getElementById("b5").value;
-    b6 = document.getElementById("b6").value;
-    b7 = document.getElementById("b7").value;
-    b8 = document.getElementById("b8").value;
-    b9 = document.getElementById("b9").value;
+    b1 = document.getElementById("b1").innerHTML;
+    b2 = document.getElementById("b2").innerHTML;
+    b3 = document.getElementById("b3").innerHTML;
+    b4 = document.getElementById("b4").innerHTML;
+    b5 = document.getElementById("b5").innerHTML;
+    b6 = document.getElementById("b6").innerHTML;
+    b7 = document.getElementById("b7").innerHTML;
+    b8 = document.getElementById("b8").innerHTML;
+    b9 = document.getElementById("b9").innerHTML;
+    name1 = document.getElementById("Name1").value;
+    name2 = document.getElementById("Name2").value;
 
     if (b1 == 'X' && b2 == 'X' && b3 == 'X') {
+
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b1 == 'X' && b4 == 'X' && b7 == 'X') {
-        window.alert('Player X won');
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b7 == 'X' && b8 == 'X' && b9 == 'X') {
-        window.alert('Player X won');
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b3 == 'X' && b6 == 'X' && b9 == 'X') {
-        window.alert('Player X won');
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b1 == 'X' && b5 == 'X' && b9 == 'X') {
-        window.alert('Player X won');
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b3 == 'X' && b5 == 'X' && b7 == 'X') {
-        window.alert('Player X won');
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b2 == 'X' && b5 == 'X' && b8 == 'X') {
-        window.alert('Player X won');
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b4 == 'X' && b5 == 'X' && b6 == 'X') {
-        window.alert('Player X won');
+        swal({
+            text: name1 + " es el ganador",
+            icon: "success"
+        });
     }
   
     else if (b1 == 'O' && b2 == 'O' && b3 == 'O') {
-        window.alert('Player O won');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b1 == 'O' && b4 == 'O' && b7 == 'O') {
         window.alert('Player 0 won');
     }
     else if (b7 == 'O' && b8 == 'O' && b9 == 'O') {
-        window.alert('Player O won');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b3 == 'O' && b6 == 'O' && b9 == 'O') {
-        window.alert('Player O won');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b1 == 'O' && b5 == 'O' && b9 == 'O') {
-        window.alert('Player O won');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
     else if ( b3 == 'O' && b5 == 'O' && b7 == 'O') {
-        window.alert('Player O won');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b2 == 'O' && b5 == 'O' && b8 == 'O') {
-        window.alert('Player 0 won');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
     else if (b4 == 'O' && b5 == 'O' && b6 == '0') {
-        window.alert('Player 0 won');
+        swal({
+            text: name2 + " es el ganador",
+            icon: "success"
+        });
     }
   
     else if ((b1 == 'X' || b1 == 'O') && (b2 == 'X' 
@@ -213,7 +263,10 @@ function winner() {
         b5 == 'O') && (b6 == 'X' || b6 == 'O') && 
         (b7 == 'X' || b7 == 'O') && (b8 == 'X' || 
         b8 == 'O') && (b9 == 'X' || b9 == 'O')) {
-            window.alert('EMPATE');
+            swal({
+                text: "EMPATE",
+                icon: "warning"
+            });
     }
 }
 } while (game == 1);
